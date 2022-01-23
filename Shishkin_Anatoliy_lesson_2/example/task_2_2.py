@@ -5,12 +5,11 @@ def convert_list_in_str(list_in: list) -> str:
         Формирует из списка результирующую строковую переменную и возвращает."""
     result_list = []
     for element in list_in:
-        if element[0] in ['+', '-']:
-            if len(element):
-                result_list.append(f'"{element[0]}{element[1:].zfill(2)}"')
-        elif element.isdigit():
-            if len(element):
+        if element[0] in ['+', '-'] or element.isdigit():
+            if element.isdigit():
                 result_list.append(f'"{element.zfill(2)}"')
+            else:
+                result_list.append(f'"{element[0]}{element[1:].zfill(2)}"')
         else:
             result_list.append(element)
     str_out = ' '.join(result_list)
