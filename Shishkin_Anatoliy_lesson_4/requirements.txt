@@ -1,0 +1,4 @@
+Django==2.2
+num2words==0.5.10
+pyquery==1.4.3
+requests==2.25.1
