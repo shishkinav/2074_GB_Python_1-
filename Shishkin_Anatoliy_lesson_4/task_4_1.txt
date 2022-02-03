@@ -1,0 +1,87 @@
+1. $ pip show pillow
+WARNING: Package(s) not found: pillow
+
+2. Установка последней версии pillow в глобальном окружении
+rufadeeeg@RU01NBFADEEEG01 MINGW64 /d/Dropbox/GeekBrains/2074_GB_Python_1- (homework_4_Fadeev)
+$ pip install pillow
+Collecting pillow
+  Using cached Pillow-9.0.1-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.1
+WARNING: You are using pip version 21.2.4; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\rufadeeeg.KROHNEGROUP\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 /d/Dropbox/GeekBrains/2074_GB_Python_1- (homework_4_Fadeev)
+$ pip show pillow
+Name: Pillow
+Version: 9.0.1
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: c:\users\rufadeeeg.krohnegroup\appdata\local\programs\python\python310\lib\site-packages
+Requires:
+Required-by:
+
+3. Проблема с активацией виртуального окружения
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол
+$ mkdir task_4_1
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол
+$ cd task_4_1
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ python3 -m venv virt
+bash: python3: command not found
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ python -m venv virt
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ ls
+virt/
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ virt/Scripts/activate.bat
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ pip freeze
+Pillow==9.0.1
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ "virt/Scripts/activate.bat"
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ pip freeze
+Pillow==9.0.1
+
+4. Установка pillow предыдущей версии в глобальном окружении
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ pip freeze
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ pip install pillow==9.0.0
+Collecting pillow==9.0.0
+  Downloading Pillow-9.0.0-cp310-cp310-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.0.0
+WARNING: You are using pip version 21.2.4; however, version 22.0.3 is available.
+You should consider upgrading via the 'C:\Users\rufadeeeg.KROHNEGROUP\AppData\Local\Programs\Python\Python310\python.exe -m pip install --upgrade pip' command.
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$ pip show pillow
+Name: Pillow
+Version: 9.0.0
+Summary: Python Imaging Library (Fork)
+Home-page: https://python-pillow.org
+Author: Alex Clark (PIL Fork Author)
+Author-email: aclark@python-pillow.org
+License: HPND
+Location: c:\users\rufadeeeg.krohnegroup\appdata\local\programs\python\python310\lib\site-packages
+Requires:
+Required-by:
+
+rufadeeeg@RU01NBFADEEEG01 MINGW64 ~/Onedrive - KROHNE GROUP/Рабочий стол/task_4_1
+$
+
