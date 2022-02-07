@@ -15,6 +15,6 @@ def main(argv):
 if __name__ == '__main__':
     import sys
     if len(sys.argv) == 3:
-        exit(main(sys.argv))
+        sys.exit(main(sys.argv))
     else:
         raise TypeError("Ожидались <номер_записи_для_редактирования> <новое_значение>")
